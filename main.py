@@ -23,7 +23,7 @@ model = SAC(
 )
 
 # Train with the callback
-model.learn(total_timesteps=1_000_000, log_interval=4, callback=checkpoint_callback)
+model.learn(total_timesteps=250_000, log_interval=4, callback=checkpoint_callback)
 
 # Save final model
 model.save("sac_hopper_final")
